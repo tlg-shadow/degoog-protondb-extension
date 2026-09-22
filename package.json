@@ -1,0 +1,21 @@
+{
+  "name": "degoog-protondb-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A self-contained ProtonDB search-engine repository for Degoog.",
+  "author": "Local Degoog extension",
+  "engines": [
+    {
+      "path": "engines/protondb",
+      "name": "ProtonDB",
+      "description": "Search Steam games through ProtonDB, with live ProtonDB tiers and Steam App IDs.",
+      "version": "1.0.0",
+      "minDegoogVersion": "0.19.0"
+    }
+  ],
+  "scripts": {
+    "test": "node --test test/protondb-engine.test.js",
+    "check": "node --check engines/protondb/index.js && node --check test/protondb-engine.test.js"
+  }
+}
